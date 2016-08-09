@@ -81,5 +81,4 @@ export PATH="/Users/handmade/opt/nodejs/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-cd ~/Projects/jin-mebel/v2-mean
-
+cd ~/projects
