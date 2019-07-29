@@ -1,9 +1,10 @@
-local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
+local timestamp='%{$fg[yellow]%}[%D{%L:%M:%S}]'
 local current_dir='%{$terminfo[bold]$fg[green]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 local firebase_project=%{$fg[cyan]%}'$(node ~/.oh-my-zsh/custom/getFirebaseProject.js $(pwd))'%{$reset_color%}
 
-PROMPT="${current_dir} ${firebase_project} ${git_branch}
+PROMPT="${timestamp} ${current_dir} ${firebase_project} ${git_branch}
 $ "
 RPS1="${return_code}"
 
