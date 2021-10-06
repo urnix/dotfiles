@@ -9,6 +9,9 @@ echo '✅ Brew installation complete \n'
 
 echo '▶️  Installing Apps with Brew...'
 brew bundle
+# Configure Google Cloud CLI $PATH and autocomplete
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 echo '✅ Apps installation complete \n'
 
 echo '▶️  Installing Node.js via NVM...'
