@@ -32,8 +32,8 @@ cd "$script_dir"
 cp -R oh-my-zsh-theme/* ~/.oh-my-zsh/custom/
 echo 'ZSH_THEME="spy4x"' >> ~/.zshrc
 echo 'source $ZSH/oh-my-zsh.sh' >> ~/.zshrc
-mkdir ~/projects && cd ~/projects
-echo 'cd ~/projects' >> ~/.zshrc # Set ~/projects as default dir to open in terminal
+mkdir ~/dev && cd ~/dev
+echo 'cd ~/dev' >> ~/.zshrc # Set ~/dev as default dir to open in terminal
 source ~/.zshrc
 echo '✅ Configuration complete \n'
 
