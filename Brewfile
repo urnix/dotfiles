@@ -26,7 +26,6 @@ cask "whatsapp"
 cask "skype"
 cask "slack"
 cask "zoom"
-cask "microsoft-teams"
 
 ## Content
 cask "google-chrome"
@@ -41,3 +40,6 @@ cask "steam"
 cask "spectacle"
 cask "upwork"
 cask "virtualbox"
+
+## Need password
+cask "microsoft-teams"

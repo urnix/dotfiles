@@ -1,5 +1,5 @@
 # Dotfiles
-This repository is my setup for a new MacOS computer.   
+This repository is my setup for a new macOS computer.   
 It helps me to install quickly all software I need for work and fun.
 
 Feel free to check & alter the list of software to be installed - [Brewfile](Brewfile)
@@ -19,3 +19,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Main installation script
 zsh ./install.sh
 ```
+## Notes
+If you need install VirtualBox, then you need to do follow before run: "System Preferences → Security & Privacy → General -> Allow apps downloaded from -> App Store and identified developers"
