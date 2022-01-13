@@ -12,8 +12,8 @@ echo '✅ Brew installation complete \n'
 echo '▶️  Installing Apps with Brew...'
 brew bundle
 # Configure Google Cloud CLI $PATH and autocomplete
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+#source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"¡
+#source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 echo '✅ Apps installation complete \n'
 
 echo '▶️  Installing Node.js via NVM...'
@@ -23,7 +23,7 @@ echo 'export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion' >> ~/.zshrc
 source ~/.zshrc
 # Install Node.js
-nvm install node
+#nvm install node
 npm i -g yarn
 echo '✅ Node.js installation complete \n'
 
@@ -34,7 +34,7 @@ echo 'ZSH_THEME="spy4x"' >> ~/.zshrc
 echo 'source $ZSH/oh-my-zsh.sh' >> ~/.zshrc
 mkdir ~/dev && cd ~/dev
 echo 'cd ~/dev' >> ~/.zshrc # Set ~/dev as default dir to open in terminal
-source ~/.zshrc
+zsh ~/.zshrc
 echo '✅ Configuration complete \n'
 
 echo '🎉 If you see this message, then its all done 🎉 \n\n\n'

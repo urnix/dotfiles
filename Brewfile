@@ -1,37 +1,43 @@
 # Search for apps names here: https://brew.sh/
+
+# Brew
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "hashicorp/tap"
 
-# Dev Tools
-brew "nvm"
-#brew "hashicorp/tap/terraform"
-cask "google-cloud-sdk"
-#cask "datagrip"
+## Development
+cask "iterm2"
 cask "webstorm"
 cask "visual-studio-code"
-cask "docker"
-#cask "postman"
+cask "dbeaver-community"
+brew 'pre-commit'
 
-# Utilities
-#cask "toggl-track"
-cask "divvy"
-cask "google-chrome"
-#cask "google-drive"
-cask "zoom"
-#cask "1password"
-cask "upwork"
+## Platforms
+brew "java"
+brew "nvm"
+cask "docker"
+cask "google-cloud-sdk"
+
+## Messengers
+cask "telegram"
+cask "whatsapp"
+cask "skype"
 cask "slack"
-cask "iterm2"
-cask "sublime-text"
-cask "transmission"
+cask "zoom"
+cask "microsoft-teams"
+
+## Content
+cask "google-chrome"
+cask "qbittorrent"
 cask "vlc"
 cask "the-unarchiver"
-#cask "windscribe"
-
-# Fun
-#cask "nvidia-geforce-now"
-#cask "discord"
+cask "handbrake"
+cask "sublime-text"
 cask "steam"
+
+## Utilities
+cask "spectacle"
+cask "upwork"
+cask "virtualbox"
