@@ -20,4 +20,12 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 zsh ./install.sh
 ```
 ## Notes
-If you need install VirtualBox, then you need to do follow before run: "System Preferences → Security & Privacy → General -> Allow apps downloaded from -> App Store and identified developers"
+1. Please carefully read all scripts and comment/uncomment lines in corresponds with your macOS version and CPU architecture!
+2. If you need install VirtualBox, then you need to do follow before run: "System Preferences → Security & Privacy → General -> Allow apps downloaded from -> App Store and identified developers". And reboot machine.
+
+## TODO
+1. Deleting old snippet from `.zshrc` before add new one.
+2. Use last changed dir in `dev` as current dir.
+3. Check is Rosetta already installed
+4. Check Intel/Apple CPU to decide do we need to install Rosetta only for M1 and where Brew installed `opt/homebrew` or `usr/local`.3. Installing Rosetta only for M1.
+5. Setup macFUSE + NTFS 3G

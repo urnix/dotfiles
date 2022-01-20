@@ -18,7 +18,7 @@ brew 'pre-commit'
 brew "java"
 brew "nvm"
 cask "docker"
-cask "google-cloud-sdk"
+# cask "google-cloud-sdk"
 
 ## Messengers
 cask "telegram"
@@ -28,10 +28,15 @@ cask "slack"
 cask "zoom"
 
 ## Content
+cask "google-drive"
+# cask "qbittorrent"
+cask "transmission"
+# cask "the-unarchiver"
 cask "google-chrome"
-cask "qbittorrent"
+cask "microsoft-edge"
+cask "opera"
+cask "firefox"
 cask "vlc"
-cask "the-unarchiver"
 cask "handbrake"
 cask "sublime-text"
 cask "steam"
@@ -39,7 +44,9 @@ cask "steam"
 ## Utilities
 cask "spectacle"
 cask "upwork"
-cask "virtualbox"
+
+# Not supported by M1 architecture
+# cask "virtualbox"
 
 ## Need password
 cask "microsoft-teams"
