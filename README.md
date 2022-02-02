@@ -29,3 +29,5 @@ zsh ./install.sh
 3. Check is Rosetta already installed
 4. Check Intel/Apple CPU to decide do we need to install Rosetta only for M1 and where Brew installed `opt/homebrew` or `usr/local`.3. Installing Rosetta only for M1.
 5. Setup macFUSE + NTFS 3G
+6. Setup import/export WebStorm dictionary
+7. Setup using iCloud
