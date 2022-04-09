@@ -24,6 +24,8 @@ https://apps.apple.com/app/hotspot-shield-vpn-best-vpn/id771076721
    2. Second (Big) Display
       1. Use as: Mirror forBuild-in Retina Display 
       2. Resolution: Default for Display
+4. Mission Control
+   1. Hot Corners: All none
 
 ## Finder
 Add folder shortcuts to left panel:
@@ -58,7 +60,9 @@ Preferences ->
 1. Full Screen: Alt + Cmd + /
 2. Left Half: Alt + Cmd + ,
 3. Right Half: Alt + Cmd + .
-4. Small arrow button in right bottom corner -> Run... : as a background application
+4. Remove all others hotkeys
+4. Launch Spectacle at login
+5. Small arrow button in right bottom corner -> Run... : as a background application
 
 ## TeamViewer
 System Preferences -> Security and Privacy
@@ -89,10 +93,10 @@ Keymap
 
 Live Templates
 ```
-dc (HMTL, Vue) -> data-cy="$NAME$"
+dc (HTML, Vue) -> data-cy="$NAME$"
 ```
 ```
-dc (JS, TS) -> [date-cy=$NAME$]
+dc (JS, TS) -> [data-cy=$NAME$]
 ```
 ```
 co (JS, TS, Vue) -> console.log(`$NAME$: ${JSON.stringify($NAME$)}`);
@@ -106,3 +110,10 @@ Plugins
 1. .env files support
 2. Shell Script
 3. .ignore
+4. Database Tools and SQL for WebStorm [https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm]
+
+## Google Chrome
+Plugins:
+   Google Translate
+      My primary language: Russian
+      Pop-up translations: Immediately display pop-up

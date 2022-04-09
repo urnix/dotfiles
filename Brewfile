@@ -50,9 +50,12 @@ cask "tor-browser"
 cask "spectacle"
 cask "teamviewer"
 cask "upwork"
+cask "windscribe"
 
 # Not supported by M1 architecture
 # cask "virtualbox"
 
 ## Need password
 cask "microsoft-teams"
+
+cask "android-file-transfer"
