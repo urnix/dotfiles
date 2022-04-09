@@ -59,8 +59,7 @@ echo '✅ Node.js installation complete \n'
 echo '▶️  Configuring custom Urnix theme for Oh-my-zsh...'
 cd "$script_dir"
 cp -R oh-my-zsh-theme/* ~/.oh-my-zsh/custom/
-echo 'ZSH_THEME="urnix"' >> ~/.zshrc
-echo 'source $ZSH/oh-my-zsh.sh' >> ~/.zshrc
+awk '{sub("ZSH_THEME=\"robbyrussell\"","#ZSH_THEME=\"robbyrussell\"\nZSH_THEME=\"urnix\"")}1' ~/.zshrc > ~/temp.txt && mv ~/temp.txt ~/.zshrc && rm -f ~/temp.txt
 mkdir ~/dev && cd ~/dev
 echo 'cd ~/dev' >> ~/.zshrc # Set ~/dev as default dir to open in terminal
 source ~/.zshrc
