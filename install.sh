@@ -3,17 +3,17 @@ set -e
 
 script_dir="$PWD"
 
-# Rosetta (For Apple Silicon (M1) CPUs only)
-if [[ $(uname -p) == 'arm' ]]; then
-  sudo softwareupdate --install-rosetta
-fi
+## Rosetta (For Apple Silicon (M1) CPUs only)
+#if [[ $(uname -p) == 'arm' ]]; then
+#  sudo softwareupdate --install-rosetta
+#fi
 
 echo '▶️  Installing Brew...'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if [[ $(uname -p) == 'arm' ]]; then
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  echo "eval '$(/opt/homebrew/bin/brew shellenv)'" >> ~/.zprofile
 else
-  echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zprofile
+  echo "eval '$(/usr/local/bin/brew shellenv)'" >> ~/.zprofile
 fi
 eval "$($(brew --prefix)/bin/brew shellenv)"
 echo '✅ Brew installation complete \n'
@@ -60,9 +60,11 @@ echo '▶️  Configuring custom Urnix theme for Oh-my-zsh...'
 cd "$script_dir"
 cp -R oh-my-zsh-theme/* ~/.oh-my-zsh/custom/
 awk '{sub("ZSH_THEME=\"robbyrussell\"","#ZSH_THEME=\"robbyrussell\"\nZSH_THEME=\"urnix\"")}1' ~/.zshrc > ~/temp.txt && mv ~/temp.txt ~/.zshrc && rm -f ~/temp.txt
-mkdir ~/dev && cd ~/dev
-echo 'cd ~/dev' >> ~/.zshrc # Set ~/dev as default dir to open in terminal
+#mkdir ~/dev && cd ~/dev
+#echo 'cd ~/dev' >> ~/.zshrc # Set ~/dev as default dir to open in terminal
 source ~/.zshrc
 echo '✅ Configuration complete \n'
 
 echo '🎉 If you see this message, then its all done\n\n'
+
+#TODO: add "PATH=~/dotfiles/bin:$(brew --prefix openjdk)/bin:$PATH" to .zshrc
