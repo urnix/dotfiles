@@ -106,11 +106,14 @@ Tools -> Actions on save
 
 Editor -> Code Style -> HTML -> Other -> Generated quite marks: Double
 
+Editor -> Inlay Hints -> Show Hints for - Off
+
 Plugins
 1. .env files support
 2. Shell Script
 3. .ignore
 4. Database Tools and SQL for WebStorm [https://plugins.jetbrains.com/plugin/10925-database-tools-and-sql-for-webstorm]
+5. Makefile Language: [https://plugins.jetbrains.com/plugin/9333-makefile-language]
 
 ## Google Chrome
 Plugins:
