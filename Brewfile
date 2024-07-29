@@ -13,6 +13,9 @@ brew "java"
 brew "python@3.10"
 brew "nvm"
 cask "docker"
+# Docker Compose v1.29.2
+system "sudo curl -L \"https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose"
+system "sudo chmod +x /usr/local/bin/docker-compose"
 # cask "google-cloud-sdk"
 
 ## Development
@@ -21,7 +24,7 @@ cask "webstorm"
 cask "visual-studio-code"
 cask "dbeaver-community"
 brew "pre-commit"
-cask "ngrok"
+#cask "ngrok"
 
 ## Messengers
 cask "telegram"
@@ -41,13 +44,11 @@ cask "sublime-text"
 cask "todoist"
 cask "steam"
 
-## Browser
-cask "google-chrome"
+## Browsers
 cask "microsoft-edge"
 cask "opera"
 cask "firefox"
 cask "tor-browser"
-cask "brave-browser"
 cask "eloston-chromium"
 cask "yandex"
 
@@ -55,14 +56,20 @@ cask "yandex"
 # cask "vmware-fusion"
 cask "spectacle"
 cask "teamviewer"
-cask "upwork"
 # cask "windscribe"
-
-# Not supported by M1 architecture
-# cask "virtualbox"
+cask "android-file-transfer"
+# cask "ipfs"
+cask "powershell"
 
 ## Need password
 cask "microsoft-teams"
 
-cask "android-file-transfer"
-# cask "ipfs"
+# Not supported by M1 architecture
+# cask "virtualbox"
+
+# Not found
+#cask "upwork"
+
+# Problems
+#cask "google-chrome"
+#cask "brave-browser"
